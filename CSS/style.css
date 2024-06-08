@@ -5,3 +5,9 @@
 .nav-link {
     color: #357767;
 }
+.intro-img{
+    text-align: center;
+}
+.intro-img img{
+    width: 100%;
+}
