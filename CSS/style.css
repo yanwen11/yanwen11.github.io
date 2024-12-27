@@ -1,0 +1,13 @@
+.bg-body-tertiary {
+    background-color: #B8DBD3
+    !important;
+}
+.nav-link {
+    color: #357767;
+}
+.intro-img{
+    text-align: center;
+}
+.intro-img img{
+    width: 100%;
+}
