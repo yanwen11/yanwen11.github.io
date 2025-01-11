@@ -7,19 +7,22 @@
 }
 
 body {
-  font-family: "Alegreya", serif;
+  font-family: PingFang, “Heiti TC”, “Noto Sans TC”, "Droid Sans Fallback",
+    “Microsoft JhengHei”, sans-serif;
   background: #d9d9d9;
 }
 
 /* 導覽列樣式 */
+/* 導覽列樣式 */
 .navbar {
-  width: 1280px;
+  width: 1280px; /* 與輪播圖片寬度相同 */
   height: 49px;
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 7px 54px 8px 54px; /* 上、右、下、左邊距都設為 54px */
+  padding: 7px 54px 8px 54px; /* 上、右、下、左邊距 */
+  margin: 0 auto; /* 水平居中 */
   background-color: #796a6a;
   color: white;
 }
@@ -177,9 +180,10 @@ body {
 }
 
 /* 新聞內容文字 */
+
 .news-item .news-content {
-  flex-grow: 1; /* 文字部分填滿剩餘空間 */
-  text-align: left;
+  color: inherit; /* 繼承父元素的顏色 */
+  text-decoration: none; /* 移除底線 */
 }
 
 .news-item .news-content p {
@@ -306,4 +310,21 @@ body {
 
 .social-icons a:hover {
   transform: scale(1.1);
+}
+
+a {
+  text-decoration: none; /* 移除所有連結的底線 */
+}
+a:hover {
+  text-decoration: underline; /* 滑鼠懸停時再顯示底線（如需要） */
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* 導覽列項目垂直排列 */
+    gap: 20px; /* 縮小項目間距 */
+  }
+
+  .navbar {
+    padding: 10px; /* 調整整體內邊距 */
+  }
 }
